@@ -1,6 +1,6 @@
 import subprocess
 
-for i in range(2,100):
+for i in range(0,500):
     job = "sbatch jobscript" + str(i) + ".sh"
     print(job)
     p = subprocess.Popen(job, shell=True)
